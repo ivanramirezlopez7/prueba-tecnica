@@ -23,6 +23,6 @@ export class ProductosService {
       const price = d['_doc']['price'];
       p.push({ name, price });
     });
-    return { url: data[0]['_doc']['name'], products: p };
+    return { url: data[0]['_doc']['url'], products: p };
   }
 }
