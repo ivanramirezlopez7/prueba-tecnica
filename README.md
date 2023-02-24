@@ -2,27 +2,32 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
+## NOTAS
+Para ejecutar en pruebas se recomienda seguir los pasos de ejecutar en prod
+
 ## Ejecutar en dev  
 1. Clonar el repositorio
-2. Tener Nest CLI instalado
+2. Tener Nest CLI instalado usar version LTS https://nodejs.org/en/ 
 ```
 npm i -g @nestjs/cli
 ```
-3. Ejecutar
+3. Tener Docker instalado https://www.docker.com/products/docker-desktop/
+
+4. Ejecutar
 ```
 yarn install
 ```
-4. Levantar la base de datos
+5. Levantar la base de datos
 ```
 docker-compose up -d
 ```
 
-5. Clonar el archivo ```.env.example``` y renombar la copia a ```
+6. Clonar el archivo ```.env.example``` y renombar la copia a ```
 .env```
 
-6. Llenar las variables de entorno definidas en el ```.env```
+7. Llenar las variables de entorno definidas en el ```.env```
 
-7. Ejecutar la aplicación en dev:
+8. Ejecutar la aplicación en dev:
 ```
 yarn start:dev
 ```
