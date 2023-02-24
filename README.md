@@ -4,37 +4,37 @@
 
 ## NOTAS
 Para ejecutar en pruebas se recomienda seguir los pasos de ejecutar en prod
-
-## Ejecutar en dev  
 1. Clonar el repositorio
 2. Tener Nest CLI instalado usar version LTS https://nodejs.org/en/ 
+en CMD ejecutar
 ```
 npm i -g @nestjs/cli
 ```
 3. Tener Docker instalado https://www.docker.com/products/docker-desktop/
+## Ejecutar en dev  
 
-4. Ejecutar
+1. Ejecutar
 ```
 yarn install
 ```
-5. Levantar la base de datos
+2. Levantar la base de datos
 ```
 docker-compose up -d
 ```
 
-6. Clonar el archivo ```.env.example``` y renombar la copia a ```
+3. Clonar el archivo ```.env.example``` y renombar la copia a ```
 .env```
 
-7. Llenar las variables de entorno definidas en el ```.env```
+4. Llenar las variables de entorno definidas en el ```.env```
 
-8. Ejecutar la aplicación en dev:
+5. Ejecutar la aplicación en dev: en CMD en la raiz del proyecto
 ```
 yarn start:dev
 ```
 # Ejecutar en produccion
 1. Crear el archivo ```.env.prod```
 2. Llenar las variables de entorno de prod
-3. Crear la nueva imagen
+3. Crear la nueva imagen en CMD en la raiz del proyecto
 ```
 docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
 ```
