@@ -27,7 +27,7 @@ docker-compose up -d
 yarn start:dev
 ```
 
-## View server
+## Ver servidor en swagger
 http://localhost:3000/app/v1/swagger
 
 ## Probar aplicacion
@@ -37,7 +37,10 @@ En el endpoit de Swagger /menu/extraccion
 ```
 Try it out
 ```
-
+2. Dar click en 
+```
+Execute
+```
 Ejemplo 2 de prueba
 En el endpoit de Swagger /supermercado/{deparament}/{category}
 1. Dar click en 
@@ -52,3 +55,7 @@ despensa
 ```
 enlatados-y-conservas
 ``` 
+4. Dar click en 
+```
+Execute
+```
