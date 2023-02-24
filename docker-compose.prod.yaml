@@ -24,11 +24,11 @@ services:
 
   db:
     image: mongo:5
-    container_name: mongo-poke
+    container_name: mongo-prueba
     restart: always
     ports:
       - 27017:27017
     environment:
-      MONGODB_DATABASE: nest-pokemon
+      MONGODB_DATABASE: db-prueba
     volumes:
       - ./mongo:/data/db
