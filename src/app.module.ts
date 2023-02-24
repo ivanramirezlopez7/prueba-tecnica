@@ -1,5 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
+import { DespensaModule } from './app/menu/despensa/despensa.module';
+import { ProductosModule } from './app/productos/productos.module';
 import configuration from './config/configuration';
 @Module({
   imports: [
@@ -8,6 +10,8 @@ import configuration from './config/configuration';
       isGlobal: true,
       cache: true,
     }),
+    DespensaModule,
+    ProductosModule,
   ],
   controllers: [],
   providers: [],

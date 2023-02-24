@@ -26,7 +26,7 @@ async function bootstrap() {
   const s_url = `${basePath}/v${version}/swagger`;
   console.log(s_url);
   SwaggerModule.setup(s_url, app, document);
-
+  app.setGlobalPrefix(basePath);
   await app.listen(port);
 
   console.log(`App listening in port ${port}`);
