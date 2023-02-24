@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { DespensaModule } from './app/menu/despensa/despensa.module';
+import { MongooseModule } from '@nestjs/mongoose';
+import { MenuModule } from './app/menu/despensa/menu.module';
 import { ProductosModule } from './app/productos/productos.module';
 import configuration from './config/configuration';
 @Module({
@@ -10,7 +11,8 @@ import configuration from './config/configuration';
       isGlobal: true,
       cache: true,
     }),
-    DespensaModule,
+    MongooseModule.forRoot( process.env.MONGODB ),
+    MenuModule,
     ProductosModule,
   ],
   controllers: [],
