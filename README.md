@@ -11,29 +11,30 @@ en CMD ejecutar
 npm i -g @nestjs/cli
 ```
 3. Tener Docker instalado https://www.docker.com/products/docker-desktop/
-## Ejecutar en dev  
 
-1. Ejecutar
+4. Ejecutar en CMD en la raiz del proyecto
 ```
 yarn install
 ```
-2. Levantar la base de datos
+## Ejecutar en dev  
+
+1. Levantar la base de datos
 ```
 docker-compose up -d
 ```
 
-3. Clonar el archivo ```.env.example``` y renombar la copia a ```
+2. Clonar el archivo ```.env.example``` y renombar la copia a ```
 .env```
 
-4. Llenar las variables de entorno definidas en el ```.env```
+3. Llenar las variables de entorno definidas en el ```.env```
 
-5. Ejecutar la aplicación en dev: en CMD en la raiz del proyecto
+4. Ejecutar la aplicación en dev: en CMD en la raiz del proyecto
 ```
 yarn start:dev
 ```
 # Ejecutar en produccion
-1. Crear el archivo ```.env.prod```
-2. Llenar las variables de entorno de prod
+1. Crear el archivo ```.env.prod``` para este ejemplo se subio el archivo al repo 
+2. Llenar las variables de entorno de prod para este ejemplo ya esta configurado
 3. Crear la nueva imagen en CMD en la raiz del proyecto
 ```
 docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
