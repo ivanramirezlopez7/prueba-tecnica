@@ -3,4 +3,5 @@ export default () => ({
   port: process.env.PORT,
   url: process.env.URL,
   basePath: process.env.BASE_PATH,
+  mongodb: process.env.MONGODB,
 });
