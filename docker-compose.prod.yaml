@@ -8,7 +8,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: prueba-docker
-    container_name: pruebaapp
+    container_name: prueba-app
     restart: always # reiniciar el contenedor si se detiene
     ports:
       - "${PORT}:${PORT}"
