@@ -3,6 +3,7 @@ import { MenuService } from './menu.service';
 import { MenuController } from './menu.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Menu, MenuSchema } from './entities/menu.entity';
+import { HttpModule } from "@nestjs/axios";
 
 @Module({
   controllers: [MenuController],
@@ -14,6 +15,7 @@ import { Menu, MenuSchema } from './entities/menu.entity';
         schema: MenuSchema,
       },
     ]),
+    HttpModule
   ],
 })
 export class MenuModule {}

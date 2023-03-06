@@ -1,12 +1,14 @@
-import { Controller, Get} from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 import { MenuService } from './menu.service';
+import puppeteer from 'puppeteer';
 
 @Controller('menu')
 export class MenuController {
   constructor(private readonly menuService: MenuService) {}
 
   @Get('extraccion')
-  findAll() {
-    return this.menuService.findAll();
+  async findAll() {
+   
+    return await this.menuService.getMenu();
   }
 }
